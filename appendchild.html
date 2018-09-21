@@ -1,0 +1,39 @@
+<html>
+  <body>
+    <u1>
+    <li>This is the first line</li>
+      
+    </u1>
+    <button onclick="aloha()">Say Aloha</button>
+    <script>
+      function aloha() {
+        //Get the unordered list in the body, and save it as ul
+        var ul = document.getElementsByTagName('ul')[0];
+        
+        //Create a new li element, and save it as a newli
+        var newli = document.createElement('li');
+        
+        //Create a new text node with the worlds "aloha" and save it as newText
+        var newText = document.createTextNode("Aloha");
+        
+        //I am going to attach the new text to the new list item
+        newli.appendChild(newText);
+        
+        //I am going to attach the ne wish item to the ul
+        ul.appendChild(newli);
+        
+        //I am going to attach the ul to the body
+        document.body.appendChild(li);
+        
+      }
+      
+      //Add items to the unordered list
+      
+    </script>
+    
+    
+  </body>
+  
+  
+  
+</html>
