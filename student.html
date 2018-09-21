@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <p class="student">Tina</p>
+    <p class="student">Katherine</p>
+    <p class="student">Annie</p>
+    <p class="student">Mr. Kam</p>
+    <p class="student">Jane</p>
+    <button onclick="died()">Who's going to Heaven?</button>
+    
+     <script>
+     //When the user clicks a button
+     //A random number will be generated
+     //The random number will correspond to a random class
+     //The class will be replaced the the word "Went to Heaven";
+     function died() {
+       var x = document.getElementsByClassName('student').length;
+       var rand = Math.floor(Math.random() * x);
+       document.getElementsByClassName('student')[rand].innerHTML = "Went to Heaven";
+     }
+  
+  </script>
+  </body>
+  
+</html>
