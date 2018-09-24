@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<body>
+  <input type="text" id="usersChoice">
+  <button onclick="list()">add to list</button>
+  <ol>
+    
+  </ol>
+  <script>
+    function list() {
+      var usersChoice = document.getElementById('usersChoice').value;
+      document.getElementById('usersChoice').value = "";
+      var newList = document.createElement('li');
+      var newText = document.createTextNode(usersChoice);
+      newList.appendChild(newText);
+      var position = document.getElementsByTagName('ol')[0];
+      position.appendChild(newList);
+    }
+  </script>
+</body>
+</html>
