@@ -1,0 +1,17 @@
+<html>
+<body>
+<ul>
+</ul>
+<script>
+var arr = ["apple", "banana", "orange"];
+
+for (var i = 0; i < arr.length; i++) {
+  var newItem = document.createElement('li');
+  var newText = document.createTextNode(arr[i]);
+  newItem.appendChild(newText);
+  var position = document.getElementsByTagName('ul')[0];
+  position.appendChild(newItem);
+}
+</script>
+</body>
+</html>
