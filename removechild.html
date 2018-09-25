@@ -11,11 +11,24 @@
   
   
 </ul>
-<button onclick="removeItem()">Remove</button>
+<select id="names">
+<option value="0">trump</option>
+<option value="1">putin</option>
+<option value="2">devos</option>
+<option value="3">kavenaugh</option>
+</select>
+<button onclick="removeItem()">Who should we remove?</button>
+
+
 <script>
   function removeItem() {
-    var eliminate = document.getElementsByTagName('li')[0];
+    //i will get the value of the names ID and save it as names
+    var names = document.getElementById('names').value;
+    //i will get the list item by the names index position and save it as eliminate
+    var eliminate = document.getElementsByTagName('li')[names];
+    //i will get the parent node of the list item and save it as container
     var container = eliminate.parentNode;
+    //i will remove the list item from the container
     container.removeChild(eliminate);
   }
 </script>
