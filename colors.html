@@ -1,0 +1,19 @@
+<html>
+  <head>
+    
+    
+  </head>
+  <body>
+    <button onclick="changeMe()">Change</button>
+    <script>
+      var colors = [
+        "#ff3399", "#78cad3", "ff00ff", "17BEBB", "EF3E36", "#9966ff", "B3001B"];
+        function changeMe() {
+          var r = Math.floor(Math.random()* colors.length);
+          document.body.style.backgroundColor = colors[r];
+        }
+    </script>
+  </body>
+  
+  
+</html>

@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      h1 {
+        color: white;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <button onclick="changeMe()">Change</button>
+    <h1 id="r"></h1>
+    <h1 id="g"></h1>
+    <h1 id="b"></h1>
+    <script>
+    function changeMe() {
+      //generate a random number between 0 - 255 and save it as red
+      var red = Math.floor(Math.random()*256);
+      document.getElementById("r").innerHTML = red;
+      //generate a random number between 0 - 255 and save it as blue
+      var blue = Math.floor(Math.random()*256);
+       document.getElementById("g").innerHTML = blue;
+      //generate a random number between 0 - 255 and save it as green
+      var green = Math.floor(Math.random()*256);
+       document.getElementById("b").innerHTML = green;
+      //change the body background color to habe rgb values
+      document.body.style.backgroundColor = (red, green, blue);
+    
+    }
+    </script>
+  </body>
+  
+  
+</html>
